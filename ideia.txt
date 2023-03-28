@@ -1,0 +1,9 @@
+Gerador de senha
+1. Com ou sem número
+2. Com ou sem caracteres especiais
+3. Letras maiúsculas, minúsculas ou misturadas
+4. Quantidade de caracteres (mínimo 4)
+
+Salvar senha gerada ou nota
+Nome, descrição, senha/nota
+
