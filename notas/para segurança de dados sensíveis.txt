@@ -1,0 +1,23 @@
+Existem algumas práticas recomendadas para enviar dados sensíveis de maneira segura em uma requisição de API Rest:
+
+Use HTTPS: HTTPS é a versão segura do protocolo HTTP e criptografa os dados em trânsito, tornando-os mais difíceis de 
+serem interceptados por terceiros. Certifique-se de que o servidor para o qual você está enviando a requisição esteja 
+configurado para usar HTTPS.
+
+Enviar os dados no corpo da requisição: Envie dados sensíveis no corpo da requisição, em vez de em parâmetros da URL. 
+Isso impede que os dados sejam armazenados em logs do servidor e outras ferramentas de monitoramento que podem ser acessadas 
+por terceiros.
+
+Codificar os dados: Codifique os dados antes de enviá-los. Existem várias formas de codificação, como Base64 ou encriptação 
+AES, que tornam os dados ilegíveis para quem não possui a chave de descriptografia.
+
+Limitar o acesso aos dados: Certifique-se de que apenas as pessoas autorizadas tenham acesso aos dados sensíveis que 
+estão sendo enviados. Isso pode ser feito com autenticação e autorização adequadas.
+
+Use tokens de autenticação: Use tokens de autenticação para autenticar a requisição. Um token de autenticação é uma chave 
+que identifica o usuário ou a aplicação que está enviando a requisição. Isso impede que terceiros enviem requisições com dados falsos.
+
+Use cabeçalhos de segurança: Use cabeçalhos de segurança, como o Content-Security-Policy e o X-XSS-Protection, para adicionar 
+camadas adicionais de segurança. Esses cabeçalhos podem ajudar a prevenir ataques de injeção de código malicioso, como 
+ataques de script entre sites (XSS).
+
